@@ -1,0 +1,287 @@
+body {
+    background-color: #2d2d2d;
+    background-image: url(https://wallpapercave.com/wp/wp11850551.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #1a1a1d;
+}
+
+.img {
+    width: 120px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.title-menu-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 1.8em;
+    margin: 0 20px 0 0;
+    color: #e8e8e8;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-size: 1em;
+    padding: 10px;
+    text-decoration: none;
+    color: #e8e8e8;
+    font-weight: bold;
+    border: 1px solid #a50310;
+    border-radius: 5px;
+    background-color: #a50310;
+}
+
+nav ul li a:hover {
+    color: #202020;
+    background-color: #e8e8e8;
+}
+nav ul li a:hover {
+    color: #202020;
+    background-color: #e8e8e8;
+}
+nav {
+    flex-grow: 1; 
+    text-align: right; 
+}
+h1 {
+    font-size: 3em;
+    color: #a50310;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 
+        1px 1px 2px #000,       
+    2px 2px 3px #444,        
+     3px 3px 5px rgba(0, 0, 0, 0.7);  
+}
+
+
+h1 { 
+    background-color: #1a1a1d; 
+    color: #e8e8e8;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    position: relative;
+    background-color: #1a1a1d;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    border: 1px solid #1a4968;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #a50310;
+    color: #e8e8e8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #202020;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background-color: #202020;
+    display: none;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul ul li {
+    display: block;
+    margin: 0;
+}
+
+nav ul ul li a {
+    color: #e8e8e8;
+    padding: 8px;
+    display: block;
+    white-space: nowrap;
+}
+
+nav ul ul li a:hover {
+    background-color: #202020;
+    color: #e8e8e8;
+}
+
+body {
+    background-color: #2d2d2d;
+    background-image: url(https://wallpapercave.com/wp/wp11850551.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #1a1a1d;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #a50310;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px #000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-size: 1em;
+    padding: 10px;
+    text-decoration: none;
+    color: #e8e8e8;
+    font-weight: bold;
+    border: 1px solid #a50310;
+    border-radius: 5px;
+    background-color: #a50310;
+}
+
+nav ul li a:hover {
+    color: #202020;
+    background-color: #e8e8e8;
+}
+
+.car-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    max-width: 900px;
+}
+
+.car-image {
+    width: 400px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.details {
+    max-width: 500px;
+}
+
+.details h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #a50310;
+    text-transform: uppercase;
+}
+
+.details p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #e8e8e8;
+    background-color: #a50310;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #202020;
+    background-color: #e8e8e8;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1a1a1d;
+    color: #e0e0e0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
