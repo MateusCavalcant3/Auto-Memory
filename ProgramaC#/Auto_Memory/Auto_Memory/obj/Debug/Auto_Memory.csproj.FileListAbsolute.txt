@@ -1,0 +1,7 @@
+C:\Users\Pichau\Desktop\Auto_Memory\Auto_Memory\bin\Debug\Auto_Memory.exe.config
+C:\Users\Pichau\Desktop\Auto_Memory\Auto_Memory\bin\Debug\Auto_Memory.exe
+C:\Users\Pichau\Desktop\Auto_Memory\Auto_Memory\bin\Debug\Auto_Memory.pdb
+C:\Users\Pichau\Desktop\Auto_Memory\Auto_Memory\obj\Debug\Auto_Memory.csproj.AssemblyReference.cache
+C:\Users\Pichau\Desktop\Auto_Memory\Auto_Memory\obj\Debug\Auto_Memory.csproj.CoreCompileInputs.cache
+C:\Users\Pichau\Desktop\Auto_Memory\Auto_Memory\obj\Debug\Auto_Memory.exe
+C:\Users\Pichau\Desktop\Auto_Memory\Auto_Memory\obj\Debug\Auto_Memory.pdb
