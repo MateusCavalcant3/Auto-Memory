@@ -1,4 +1,5 @@
 CREATE DATABASE oficina;
+
 USE oficina;
 
 CREATE TABLE cep (
@@ -18,9 +19,11 @@ CREATE TABLE cliente (
     logadouro VARCHAR(255) NOT NULL,
     cpf VARCHAR(14) UNIQUE NOT NULL,
     id_cep INT NOT NULL,
+    senha varchar(255) not null,
     PRIMARY KEY (id_cliente),
-    FOREIGN KEY (id_cep) REFERENCES cep(id_cep)
+    foreign key (id_cep) references cep(id_cep)
 );
+
 
 CREATE TABLE carro (
     idcarro INT NOT NULL AUTO_INCREMENT,
@@ -39,15 +42,14 @@ CREATE TABLE carro (
 CREATE TABLE pedido (
     id_pedido INT NOT NULL AUTO_INCREMENT,
     id_cliente INT NOT NULL,
-    id_carro INT,
     data_pedido DATE NOT NULL,
     valor_total DECIMAL(10, 2) NOT NULL,
     forma_pagamento VARCHAR(50) NOT NULL,
-    status VARCHAR(30) NOT NULL DEFAULT 'Pendente',
+    status_2 VARCHAR(30) NOT NULL DEFAULT 'Pendente',
     dados_pagamento VARCHAR(255),
+    descricao_pedido tinytext,
     PRIMARY KEY (id_pedido),
-    FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente),
-    FOREIGN KEY (id_carro) REFERENCES carro(idcarro)
+    FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente)
 );
 
 CREATE TABLE oficina (
@@ -63,7 +65,6 @@ CREATE TABLE funcionario (
     idfuncionario INT NOT NULL AUTO_INCREMENT,
     nome VARCHAR(45) NOT NULL,
     cargo VARCHAR(45) NOT NULL,
-    qntd_func INT NOT NULL,
     cpf VARCHAR(14) UNIQUE NOT NULL,
     email VARCHAR(60) UNIQUE NOT NULL,
     salario DECIMAL(10, 2) NOT NULL,
@@ -107,40 +108,44 @@ CREATE TABLE compras (
     produto VARCHAR(100) NOT NULL,
     marca VARCHAR(50) NOT NULL,
     valor DECIMAL(10, 2) NOT NULL,
-    data DATE NOT NULL,
-    PRIMARY KEY (id_compra)
-);
-
-CREATE TABLE compra_fornecedor (
-    id_compra INT NOT NULL,
-    id_fornecedor INT NOT NULL,
-    quantidade INT NOT NULL,
-    PRIMARY KEY (id_compra, id_fornecedor),
-    FOREIGN KEY (id_compra) REFERENCES compras(id_compra) ON DELETE CASCADE,
-    FOREIGN KEY (id_fornecedor) REFERENCES fornecedores(idfornecedores) ON DELETE CASCADE
+    data_compra DATE NOT NULL,
+    id_oficina int not null,
+    id_fornecedor int not null,
+    PRIMARY KEY (id_compra),
+    foreign key (id_oficina) references oficina(id_oficina),
+     FOREIGN KEY (id_fornecedor) REFERENCES fornecedores(idfornecedores) ON DELETE CASCADE
 );
 
 CREATE TABLE Despesas (
     id_despesa INT PRIMARY KEY AUTO_INCREMENT,
     descricao VARCHAR(255) NOT NULL,
-    data DATE NOT NULL,
+    data_despesa DATE NOT NULL,
     valor DECIMAL(10, 2) NOT NULL,
-    tipo_despesa VARCHAR(100) default "Saida"
-);
+    tipo_despesa VARCHAR(100) default "Saida",
+    id_oficina int not null,
+    foreign key (id_oficina) references oficina(id_oficina));
 
+
+select * from cliente;
+/*
 select * from cep;
-
+*/
+/*
 INSERT INTO cep (codigo_cep, logadouro, cidade, estado) VALUES 
 ('09028-367', 'Rua Fagundes Gomes', 'São Paulo', 'SP');
+*/
 
-select * from oficina;
-
+/*select * from oficina;
+*/
+/*
 INSERT INTO oficina (cnpj, logadouro, id_cep) VALUES
 ('23.457.659/8757-24', 'Rua Fagundes Gomes, 09028-367', 1);
-
-SET @id_oficina = LAST_INSERT_ID();
+*/
+/*SET @id_oficina = LAST_INSERT_ID();
 
 select * from funcionario;
+*/
+/*
 
 INSERT INTO funcionario (nome, cargo, qntd_func, cpf, email, salario, hora_entrada, hora_saida, escala, estado_civil, numero_conta, id_oficina) 
 VALUES 
@@ -155,4 +160,5 @@ VALUES
   ('', 'Analista de logística', 2, '753.159.486-00', 'logistica2@example.com', 1789.00, '08:00:00', '16:00:00', '5x2', '', '', @id_oficina),
   ('', 'Gestor de Recursos Humanos', 1, '783.159.486-00', 'rh@example.com', 1897.00, '08:00:00', '16:00:00', '5x2', '', '', @id_oficina),
   ('', 'Gestor de Recursos Humanos', 2, '159.765.486-00', 'rh2@example.com', 1897.00, '08:00:00', '16:00:00', '5x2', '', '', @id_oficina);
-
+  
+  */
