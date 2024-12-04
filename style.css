@@ -1,0 +1,257 @@
+body {
+    background-color: #2d2d2d;
+    background-image: url(https://wallpapercave.com/wp/wp11850551.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #1a1a1d;
+}
+
+.img {
+    width: 120px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.title-menu-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 1.8em;
+    margin: 0 20px 0 0;
+    color: #e8e8e8;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-size: 1em;
+    padding: 10px;
+    text-decoration: none;
+    color: #e8e8e8;
+    font-weight: bold;
+    border: 1px solid #a50310;
+    border-radius: 5px;
+    background-color: #a50310;
+}
+
+nav ul li a:hover {
+    color: #202020;
+    background-color: #e8e8e8;
+}
+nav ul li a:hover {
+    color: #202020;
+    background-color: #e8e8e8;
+}
+nav {
+    flex-grow: 1; 
+    text-align: right; 
+}
+h1 {
+    font-size: 3em;
+    color: #a50310;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 
+        1px 1px 2px #000,       
+    2px 2px 3px #444,        
+     3px 3px 5px rgba(0, 0, 0, 0.7);  
+}
+
+
+h1 { 
+    background-color: #1a1a1d; 
+    color: #e8e8e8;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    position: relative;
+    background-color: #1a1a1d;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    border: 1px solid #1a4968;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #a50310;
+    color: #e8e8e8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #000;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background-color: #202020;
+    display: none;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul ul li {
+    display: block;
+    margin: 0;
+}
+
+nav ul ul li a {
+    color: #e8e8e8;
+    padding: 8px;
+    display: block;
+    white-space: nowrap;
+}
+
+nav ul ul li a:hover {
+    background-color: #202020;
+    color: #e8e8e8;
+}
+
+h1 img {
+    margin-right: 20px;
+    align-self: flex-start;
+}
+
+h3 {
+    color: #e8e8e8;
+    margin: 20px auto;
+    text-align: center;
+    width: 80%;
+    line-height: 1.6;
+}
+
+p {
+    margin: 15px 0;
+}
+
+strong {
+    color: #e8e8e8;
+    font-weight: bold;
+}
+
+p {
+    border: 1px solid #a50310;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #444;
+}
+.antes-depois {
+    margin: 40px auto;
+    width: 80%;
+    text-align: center;
+    background-color: #444;
+    color: #e8e8e8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.antes-depois h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #e8e8e8;
+    text-shadow: 1px 1px 3px #000;
+}
+
+.antes-depois .images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.antes-depois .images div {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.antes-depois .images img {
+    width: 300px;
+    height: auto;
+    border: 2px solid #e8e8e8;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.antes-depois .images img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+}
+
+.antes-depois .images p {
+    margin-top: 10px;
+    color: #e8e8e8;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1em;
+    color: #333;
+    text-align: center;
+}
